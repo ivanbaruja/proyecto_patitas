@@ -24,6 +24,7 @@
    align-items:stretch;
    text-align: center;
    height: 150px;
+   width: 100%;
 }
 
 h1{
@@ -32,61 +33,41 @@ h1{
    text-align: center;
 }
 
-.menu{
-   display: flex;
-   align-items:flex-end;
-   width: 1000px;
-   margin: auto;
-   background-color:rgb(0, 109, 128)
-   
-}
-.navegacion li{
-    position:relative;
-    display: inline-block;
-}
-
-.navegacion li a{
-   display:inline-table;
-   padding: 15px 20px;
-   color: rgb(0, 19, 128);
-   font-size: 20px;
-}
-.navegacion li a:hover{
-   color: red;
-   transition: all .5s;
-}
 
 .icono{
    width: 25px;
    height: 25px;
 }
 
-.container{
+
+aside .img-menu{
+      width: 100%;
+}
+   
+
+.index_container{
    display: grid;
    grid-template-areas: 
    "main main main"
    "aside aside aside"
    "footer footer footer";
-   grid-template-rows: repeat(1fr 1fr 1fr);
+   grid-template-columns: repeat(3, 1fr);
    gap: 0px;
    align-items:center;
 }
-main{
-   align-items: baseline;
-   margin: 30px;
-   padding: auto;
-   justify-content: center;
-}
-.banner{
-   padding: 20px;
-   margin: -30px;
-   height: 100%;
+main .index_container{
    width: 100%;
+   align-items: center;
+   margin: 100px ;
+   padding: auto;
+   justify-content:center;
 }
-.img-menu{
- height: 90%;
- width: auto;
+
+
+
+a .img-menu{
  border-radius: 10px;
+ justify-content: center;
 }
 
 .img-fondo{
@@ -94,8 +75,9 @@ main{
 }
 
 footer{
-   grid-area: footer;
-    justify-content: space-around;
+   grid-area:auto;
+
+    justify-content: center;
    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 body{
@@ -128,6 +110,11 @@ body{
  .productos{
    color: rgb(110, 5, 110);
 }
+
+
+
+
+
 /*video del inicio*/
  .video{
     display: block;
@@ -135,16 +122,6 @@ body{
     margin-top: -25%;
     margin-left: 30%;
   width: 30%;
- }
-/*encabezados*/
- /*h1{
-    display: block;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    color:#2f90eb;
-    background-color: white;
  }
 /*pagina quienes somos*/
  .imagendefondo{
@@ -204,8 +181,12 @@ fieldset{
 
    .grid-area{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: auto;
+      grid-template-areas: 
+      "main main main"
+      "aside aside aside"
+      "footer footer footer";
+      grid-template-rows: repeat(3, 1fr);
+      align-items:center;
       gap: 10px;
   }
   .grid-area{
@@ -225,6 +206,61 @@ fieldset{
    height: 450px;
    width: 450px;
   }
+
+  @media (min-width: 480px) and (max-width: 680px) {
+
+   header{
+      background-color: black;
+      display: inline-block;
+   
+   }
+   h1{
+   
+      font-size: 30px;
+   }
+   
+   .grid-img img{
+      height: 40%;
+      width: 40%;
+   }
+   .grid-img :hover{
+      height: 250px;
+      width: 250px;
+     }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+   .grid-area{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .grid-img img{
+      height: 60%;
+      width: 60%;
+   }
+   .grid-img :hover{
+      height: 350px;
+      width: 350px;
+     }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+   .grid-area{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .grid-img img{
+      height: 60%;
+      width: 60%;
+   }
+   .grid-img :hover{
+      height: 450px;
+      width: 450px;
+     }
+}
+
 
   /*pagina amigos*/
 
@@ -256,6 +292,21 @@ fieldset{
    transform: rotate(45deg);
 }
 
+/*seccion gatos y perros*/
 
-/*ajuste de pantalla*/
+div.seccion{
+   border: black solid 1px;
+   border-radius: 10px ; 
+}
 
+.boton {
+   text-decoration: none;
+   display: inline-flex;
+   display: block;
+   border: 1px solid #2e518b; 
+   padding: 10px; 
+   background-color: #2e518b; 
+   color: white; 
+   border-radius: 50px;
+   font-size: 20px;
+ }
