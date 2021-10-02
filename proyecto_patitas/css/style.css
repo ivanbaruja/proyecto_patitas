@@ -209,6 +209,11 @@ fieldset{
 
   @media (min-width: 480px) and (max-width: 680px) {
 
+   .grid-area{
+      display: flex;
+      flex-direction: column;
+   }
+
    header{
       background-color: black;
       display: inline-block;
