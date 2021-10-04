@@ -52,8 +52,10 @@ aside .img-menu{
    "aside aside aside"
    "footer footer footer";
    grid-template-columns: repeat(3, 1fr);
-   gap: 0px;
+   gap: 10px;
    align-items:center;
+    margin: 15px;
+  
 }
 main .index_container{
    width: 100%;
@@ -61,6 +63,7 @@ main .index_container{
    margin: 100px ;
    padding: auto;
    justify-content:center;
+   
 }
 
 
@@ -84,36 +87,6 @@ body{
       background-image: url(/css/14710.jpg);
  }
 
-/*imgenes de los productos*/ 
- img{
-    background-position: absolute;
-    background-repeat: no-repeat;
- }
-
- 
-
- .img__producto{
-    display: inline-block;
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 60%;
-  
- }
-
- .img__producto__2{
-    display: inline-block;
-    background-position: left;
-    padding-left: 75%;
-    margin-top: -30%;
- }
-
- .productos{
-   color: rgb(110, 5, 110);
-}
-
-
-
-
 
 /*video del inicio*/
  .video{
@@ -125,12 +98,13 @@ body{
  }
 /*pagina quienes somos*/
  .imagendefondo{
-    background-image: url(fondodehuellas.jpg);
+    background-image: url(/Multimedia/fondodehuellas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 350px;
     height: 50%;
+    width: 100%;
  }
  .titulos{
     color: rgb(7, 7, 8);
@@ -162,11 +136,6 @@ body{
    font-weight: bold;
    border: double;
    color: black;
-}
-
-
-fieldset{
-   border-color: rgb(24, 173, 69);
 }
 
 /*productos*/
@@ -208,19 +177,13 @@ fieldset{
   }
 
   @media (min-width: 480px) and (max-width: 680px) {
-
+/*productos*/
    .grid-area{
       display: flex;
       flex-direction: column;
    }
 
-   header{
-      background-color: black;
-      display: inline-block;
-   
-   }
    h1{
-   
       font-size: 30px;
    }
    
@@ -232,9 +195,40 @@ fieldset{
       height: 250px;
       width: 250px;
      }
+/*home*/
+     .index_container{
+        display: flex;
+        flex-direction: column;
+     }
+     .banner{
+        height: 100%;
+        width: 100%;
+     }
+     /*quienes somos*/
+
+   section{
+      display: flex;
+      flex-direction: row;
+   }
+     .imagendefondo{
+        width: 100%;
+     }
+    h2 .titulos__2{
+       font-size: 10px;
+    }
+
+   p .texto{
+       font-size: 10px;
+    }
+    /*amigos*/
+    .amigos{
+       display: flex;
+       flex-direction: column;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 1023px) {
+   /*productos*/
    .grid-area{
        display: flex;
        flex-direction: column;
@@ -248,9 +242,31 @@ fieldset{
       height: 350px;
       width: 350px;
      }
+     /*home*/
+     .index_container{
+        display: flex;
+        flex-direction: column;
+     }
+     .banner{
+      height: 100%;
+      width: 100%;
+   }
+    /*quienes somos*/
+     .imagendefondo{
+      width: 100%;
+   }
+  .titulos__2{
+     font-size: 40px;
+  }
+
+  .texto{
+     font-size: 40px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
+
+   /*home*/
    .grid-area{
        display: flex;
        flex-direction: column;
@@ -264,7 +280,28 @@ fieldset{
       height: 450px;
       width: 450px;
      }
+     /*productos*/
+     .index_container{
+        display: flex;
+        flex-direction: column;
+     }
+     .banner{
+      height: 100%;
+      width: 100%;
+   }
+/*quienes somos*/
+     .imagendefondo{
+      width: 100%;
+   }
+  .titulos__2{
+     font-size: 80px;
+  }
+
+  .texto{
+     font-size: 80px;
+  }
 }
+
 
 
   /*pagina amigos*/
@@ -286,17 +323,9 @@ fieldset{
   }
 
  .amigos.texto{
-    padding: 25px
+    padding: 25px;
  }
     
-   
-
-/*logo*/
-.logo{
-   padding: 20px;
-   transform: rotate(45deg);
-}
-
 /*seccion gatos y perros*/
 
 div.seccion{
@@ -315,3 +344,4 @@ div.seccion{
    border-radius: 50px;
    font-size: 20px;
  }
+ 

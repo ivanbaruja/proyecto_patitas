@@ -13,10 +13,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body class="fondo">
-  
   <header class="header">
    
-    <h1>Patitas</h1>
+    <h1>Patitas</h1> 
+    <div class="container d-flex align-items-center justify-content-center">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,42 +52,75 @@
       </div>
     </div>
   </nav>
+</div>
 </header>
+    
 
-<br><br>
 
+<div class="container d-grid align-items-center justify-content-center p-3 mb-2 bg-secondary text-white border border-dark p-3">
 <fieldset style="width: 40%;">
     <h3>Contactanos</h3>
-    <br>
+ 
 
  <form action="action">
     <label for="Nombre">Nombre</label>
     <input type="text"name="nombre">
     <label for="Apellido">Apellido</label>
     <input type="text"name="apellido">
+    </form>
+    <form action="action">
+      <label for="Mail">Mail</label>
+      <input type="text" name="mail">
+    </form>
 
-
-<br><br>
-
-      <input type="radio" name="sexo" id="hombre"/> Hombre  
-      <input type="radio" name="sexo" id="mujer"/> Mujer
-
-
-<br><br>
 
 <form action="action">
     <label for="Telefono">Telefono</label>
     <input type="text" name="telefono" id="">
+  </form>
+  <br>
 
-<br><br>
+  <form action="action">Tarjetas
+    <select name="tarjetas" id="">
+      <option value="tarjeta"></option>
+    <option value="tarjeta">visa</option>
+    <option value="tarjeta">Master card</option>
+    <option value="tarjeta">Cabal</option>
+    <option value="tarjeta">BBVA</option>
+  </select>
+  </form>
+  <br>
+  <form action="action">Cuotas
+    <select name="cuotas" id="">
+      <option value="cuotas"></option>
+      <option value="cuotas">3</option>
+      <option value="cuotas">6</option>
+      <option value="cuotas">12</option>
+      <option value="cuotas">24</option>
+    </select>
+  </form>
+  
 
- <h3>Dejanos tu comentario</h3>
-     <textarea name="textarea" rows="10" cols="50"></textarea>
+<form action="action">
+  <label for="Numero de tarjeta">Numero de tarjeta</label>
+  <input type="text" name="Numero de tarjeta">
+</form>
+
+<form action="action">
+  <input type="radio" name="efectivo" id="efectivo"/> efectivo
+</form>
+
+
+ <br>
         <form action="action">
           <input type="submit" value="Enviar formulario">
+        </form>
+        <br>
+        <form action="action">
           <input type="reset" value="Limpiar formulario">
         </form>
  </fieldset>
+</div>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
