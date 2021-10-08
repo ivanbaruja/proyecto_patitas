@@ -39,7 +39,7 @@ h1{
 
 
 body{
-      background-image: url(/css/14710.jpg);
+      background-image: url(14710.jpg);
  }
 
 
@@ -130,133 +130,7 @@ body{
    height: 450px;
    width: 450px;
   }
-
-  @media (min-width: 480px) and (max-width: 680px) {
-/*productos*/
-   .grid-area{
-      display: flex;
-      flex-direction: column;
-   }
-
-   h1{
-      font-size: 30px;
-   }
-   
-   .grid-img img{
-      height: 40%;
-      width: 40%;
-   }
-   .grid-img :hover{
-      height: 250px;
-      width: 250px;
-     }
-
-     /*quienes somos*/
-
-   section{
-      display: flex;
-      flex-direction: row;
-   }
-     .imagendefondo{
-        width: 100%;
-     }
-    h2 .titulos__2{
-       font-size: 10px;
-    }
-
-   p .texto{
-       font-size: 10px;
-    }
-    /*amigos*/
-    .amigos{
-       display: flex;
-       flex-direction: column;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 1023px) {
-   /*productos*/
-   .grid-area{
-       display: flex;
-       flex-direction: column;
-   }
-
-   .grid-img img{
-      height: 60%;
-      width: 60%;
-   }
-   .grid-img :hover{
-      height: 350px;
-      width: 350px;
-     }
-   
-    /*quienes somos*/
-     .imagendefondo{
-      width: 100%;
-   }
-  .titulos__2{
-     font-size: 40px;
-  }
-
-  .texto{
-     font-size: 40px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-
-   /*productos*/
-   .grid-area{
-       display: flex;
-       flex-direction: column;
-   }
-
-   .grid-img img{
-      height: 60%;
-      width: 60%;
-   }
-   .grid-img :hover{
-      height: 450px;
-      width: 450px;
-     }
-   
-/*quienes somos*/
-     .imagendefondo{
-      width: 100%;
-   }
-  .titulos__2{
-     font-size: 80px;
-  }
-
-  .texto{
-     font-size: 80px;
-  }
-}
-
-
-
-  /*pagina amigos*/
-
-  .amigos{
-   display: flex;
-   justify-content: space-between;
-   flex-flow: wrap ;
-   padding: 30px;
-   margin: auto;
-
-  }
- .amigos div{
-     width: 600px;
-     margin: 50px;
-     text-align: center;
-
-
-  }
-
- .amigos.texto{
-    padding: 25px;
- }
-    
+  
 /*seccion gatos y perros*/
 
 div.seccion{
@@ -275,4 +149,132 @@ div.seccion{
    border-radius: 50px;
    font-size: 20px;
  }
+
+ /*responsive*/
+ 
+ @media (min-width: 480px) and (max-width: 680px) {
+   /*productos*/
+      .grid-area{
+         display: flex;
+         flex-direction: column;
+      }
+   
+      h1{
+         font-size: 30px;
+      }
+      
+      .grid-img img{
+         height: 40%;
+         width: 40%;
+      }
+      .grid-img :hover{
+         height: 250px;
+         width: 250px;
+        }
+   
+        /*quienes somos*/
+   
+      section{
+         display: flex;
+         flex-direction: row;
+      }
+        .imagendefondo{
+           width: 100%;
+        }
+       h2 .titulos__2{
+          font-size: 10px;
+       }
+   
+      p .texto{
+          font-size: 10px;
+       }
+       /*amigos*/
+       .amigos{
+          display: flex;
+          flex-direction: column;
+       }
+   }
+   
+   @media (min-width: 700px) and (max-width: 1023px) {
+      /*productos*/
+      .grid-area{
+          display: flex;
+          flex-direction: column;
+      }
+   
+      .grid-img img{
+         height: 60%;
+         width: 60%;
+      }
+      .grid-img :hover{
+         height: 350px;
+         width: 350px;
+        }
+      
+       /*quienes somos*/
+        .imagendefondo{
+         width: 100%;
+      }
+     .titulos__2{
+        font-size: 40px;
+     }
+   
+     .texto{
+        font-size: 40px;
+     }
+   }
+   
+   @media (min-width: 1024px) and (max-width: 1200px) {
+   
+      /*productos*/
+      .grid-area{
+          display: flex;
+          flex-direction: column;
+      }
+   
+      .grid-img img{
+         height: 60%;
+         width: 60%;
+      }
+      .grid-img :hover{
+         height: 450px;
+         width: 450px;
+        }
+      
+   /*quienes somos*/
+        .imagendefondo{
+         width: 100%;
+      }
+     .titulos__2{
+        font-size: 80px;
+     }
+   
+     .texto{
+        font-size: 80px;
+     }
+   }
+   
+   
+   
+     /*pagina amigos*/
+   
+     .amigos{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: wrap ;
+      padding: 30px;
+      margin: auto;
+   
+     }
+    .amigos div{
+        width: 600px;
+        margin: 50px;
+        text-align: center;
+   
+   
+     }
+   
+    .amigos.texto{
+       padding: 25px;
+    }
  
