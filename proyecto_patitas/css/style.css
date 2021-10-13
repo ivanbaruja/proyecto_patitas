@@ -38,11 +38,11 @@ h1{
 }
 
 
-body{
+.body{
       background-image: url(./14710.jpg);
  }
 
-
+ 
 /*video del inicio*/
  .video{
     display: block;
@@ -53,7 +53,7 @@ body{
  }
 /*pagina quienes somos*/
  .imagendefondo{
-    background-image: url(/Multimedia/fondodehuellas.jpg);
+    background-image: url(./Multimedia/fondodehuellas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -120,16 +120,7 @@ body{
      font-size: 12px;
  
   }
-  .grid-img{
-     height: 500px;
-     width: 500px;
-   
-    
-  }
-  .grid-img :hover{
-   height: 450px;
-   width: 450px;
-  }
+  
   
 /*seccion gatos y perros*/
 
@@ -150,9 +141,40 @@ div.seccion{
    font-size: 20px;
  }
 
+ /*Precios*/
+
+ .precios{
+    display: flex;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+ 
+ }
+
+ .columna{
+   background-color: rgb(228, 228, 228);
+   color: #333;
+   border: 1px solid #333;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 10px 10px 5px #888
+ }
+ 
+.p_precio{
+   text-align: center;
+   font-size: 50px;
+   color: #80D0C7;
+}
+
+.text{
+   font-size: 15px;
+   color: black;
+}
+
  /*responsive*/
  
- @media (min-width: 480px) and (max-width: 680px) {
+ @media (max-width: 680px) {
    /*productos*/
       .grid-area{
          display: flex;
@@ -195,7 +217,7 @@ div.seccion{
        }
    }
    
-   @media (min-width: 700px) and (max-width: 1023px) {
+   @media (max-width: 1023px) {
       /*productos*/
       .grid-area{
           display: flex;
@@ -224,7 +246,7 @@ div.seccion{
      }
    }
    
-   @media (min-width: 1024px) and (max-width: 1200px) {
+   @media (max-width: 1200px) {
    
       /*productos*/
       .grid-area{
