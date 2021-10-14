@@ -52,21 +52,13 @@ h1{
   width: 30%;
  }
 /*pagina quienes somos*/
- .imagendefondo{
-    background-image: url(./Multimedia/fondodehuellas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 350px;
-    height: 50%;
-    width: 100%;
- }
+ 
  .titulos{
     color: rgb(7, 7, 8);
     text-align: center;
     background-color: white;
  }
- .titulos__2{
+ .titulos_2{
     color: rgb(7, 7, 8);
     text-align: center;
  }
@@ -79,19 +71,6 @@ h1{
     text-align: center;
     color: rgb(7, 22, 150);
  }
-/*tabla*/
- .cuadro{
-    width: 500px;
-    height: 300px;
-    background: linear-gradient(90deg, rgb(0, 17, 36) 0%, rgba(9,121,97,0.2945553221288515) 35%, rgba(0,212,255,1) 100%);
- }
-
- table{ 
-   font-size: 20px;
-   font-weight: bold;
-   border: double;
-   color: black;
-}
 
 /*productos*/
 
@@ -196,19 +175,20 @@ div.seccion{
    
         /*quienes somos*/
    
-      section{
+      .container_somos{
          display: flex;
-         flex-direction: row;
+         justify-content: left;
+         flex-direction: column;
       }
-        .imagendefondo{
-           width: 100%;
-        }
-       h2 .titulos__2{
+      
+       h2.titulos_2{
           font-size: 10px;
+          text-align: center;
        }
    
-      p .texto{
-          font-size: 10px;
+      p.texto{
+          font-size: 15px;
+          text-align: justify;
        }
        /*amigos*/
        .amigos{
@@ -234,14 +214,22 @@ div.seccion{
         }
       
        /*quienes somos*/
-        .imagendefondo{
-         width: 100%;
+       .container_somos{
+         display: flex;
+         justify-content: left;
+         flex-direction: column;
       }
-     .titulos__2{
+       
+      
+     h2.titulos_2{
+        display: flex;
+        text-align: center;
         font-size: 40px;
      }
    
-     .texto{
+     p.texto{
+        display: flex;
+        text-align: justify;
         font-size: 40px;
      }
    }
@@ -264,14 +252,21 @@ div.seccion{
         }
       
    /*quienes somos*/
-        .imagendefondo{
-         width: 100%;
-      }
-     .titulos__2{
+   .container_somos{
+      display: flex;
+      justify-content: left;
+      flex-direction: column;
+   }
+      
+     h2.titulos_2{
+        display: flex;
+        text-align: center;
         font-size: 80px;
      }
    
-     .texto{
+     p.texto{
+        display: flex;
+        text-align: justify;
         font-size: 80px;
      }
    }
