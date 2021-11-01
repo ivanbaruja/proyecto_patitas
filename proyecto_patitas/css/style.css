@@ -294,4 +294,9 @@ div.seccion{
     .amigos.texto{
        padding: 25px;
     }
+
+    .icono {
+      width: 40px;
+      height: 40px;
+    }
  
